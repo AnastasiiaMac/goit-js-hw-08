@@ -93,7 +93,6 @@ const handleClick = (event) => {
     </div>
 `)
 
-instance.show()
-}
+    instance.show()
+    
 gallery.addEventListener("click", handleClick);
- 
