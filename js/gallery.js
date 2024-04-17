@@ -81,9 +81,8 @@ gallery.insertAdjacentHTML("beforeend", markup);
 const handleClick = (event) => {
     event.preventDefault()
     if (event.target === event.currentTarget || event.target.classList.contains("gallery-link")) {
-      return  
+        return
     }
-   
     const bigImage = event.target.getAttribute("data-source")
     console.log(bigImage)
     const imageAlt = event.target.getAttribute("alt")
@@ -91,8 +90,8 @@ const handleClick = (event) => {
     <div class="modal">
         <img src="${bigImage}" alt="${imageAlt}">
     </div>
-`)
-
+`);
     instance.show()
+}
     
 gallery.addEventListener("click", handleClick);
